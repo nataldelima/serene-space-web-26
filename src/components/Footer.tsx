@@ -1,3 +1,4 @@
+import logoNl from "@/assets/logo-nl.png";
 import { Instagram, Linkedin } from "lucide-react";
 
 const Footer = () => {
@@ -32,12 +33,15 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-6 border-t border-primary-foreground/10 text-center">
-          <p className="font-body text-xs">
-            © {new Date().getFullYear()} Dra. Helena Monteiro. Todos os direitos reservados.
+          <p className="font-body text-xs items-center">
+            © {new Date().getFullYear()} Dra. Helena Monteiro. Todos os direitos reservados. <br />
+            Feito com ❤️ por <a href="https://nataldelima.github.io" target="_blank"
+            ><img src={logoNl} style={{ height: 28, width: 28, verticalAlign: "middle", display: "inline-block" }} alt="Logo" />
+              Natal Lima</a>
           </p>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 };
 

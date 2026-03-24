@@ -1,3 +1,4 @@
+import imgBio from "@/assets/dra-helena.jpg";
 import { motion } from "framer-motion";
 
 const AboutSection = () => {
@@ -12,7 +13,8 @@ const AboutSection = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="w-full aspect-[3/4] rounded-2xl bg-sage-light overflow-hidden">
-              <div className="w-full h-full bg-gradient-to-br from-sage/30 to-accent flex items-end justify-center">
+              <div className="w-full h-full bg-gradient-to-br from-sage/30 to-accent flex items-end justify-center relative">
+                <img src={imgBio} alt="Dra. Helena Monteiro" className="absolute inset-0 w-full h-full object-cover object-top" />
                 <div className="w-3/4 h-3/4 bg-sage/20 rounded-t-full" />
               </div>
             </div>
